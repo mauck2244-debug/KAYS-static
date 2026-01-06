@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.main-con {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+hr {
+    background-color: #a09f9f67;
+    border: none;
+    height: 0.5px;
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+}
+
+.Header {
+    background-image: url(pic/images.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.navigetor {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.nav-menu {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    color: #504e4e;
+    display: flex;
+    gap: 50px;
+    font-size: 17.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+main {
+    display: flex;
+    justify-content: center;  
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 615px;
+    max-width: 327px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px #504f4f;
+    padding: 0px;
+    align-items: center;
+    
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+    max-width: 310px;
+    max-height: 362.78px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position:top;
+    margin: 10px 0 10px 0;
+
+}
+
+.content-text{
+    width: 90%;
+    font-size: 16px;
+    color: #3b3a3a;
+    margin-bottom: 15px;
+}
+
+.content-text h3{
+
+}
+
+.img-nav{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;  
+}
+
+.main-container{
+    width: 100%;
+    text-align: left;
+}
+
+.main-container{
+    margin: 0 20px 0 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-conta{
+    max-width: 800px;
+}
+
+.main-conta p{
+    text-transform: uppercase;
+}
+
+.main-img{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;  
+    margin-bottom: 20px;
+}
+
+@media (max-width:562px) {
+
+    .main-con h2{
+        font-size: 22.2px;
+    }
+
+}
