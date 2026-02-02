@@ -51,11 +51,12 @@ hr {
 }
 
 .Header {
-    background-image: url(pic/images.png);
+    background-image: url(pic/KAYSLOGO.jpg);
     background-repeat: no-repeat;
     background-size: 200px;
     width: 200px;
-    height: 200px;
+    height: 150px;
+    margin-top: 50px;
 }
 
 .navigetor {
@@ -366,7 +367,7 @@ body::before {
     max-width: 250px;
     height: 100%;
     pointer-events: none;
-    z-index: 9999;
+    z-index: -1;
 }
 
 body::after {
@@ -381,7 +382,7 @@ body::after {
     max-width: 250px;
     height: 100%;
     pointer-events: none;
-    z-index: 9999;
+    z-index: -1;
 }
 
 body::before, body::after {
@@ -435,4 +436,7 @@ body::before, body::after {
     .hide-on-mobile {
         display: none;
     }
+    body::before, body::after {
+    display: none;
+}
 }
