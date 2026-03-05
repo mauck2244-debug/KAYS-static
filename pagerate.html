@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head></head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<title>kaysespressobar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>kaysespressobar</title>
 </head>
 
 <body>
@@ -42,17 +42,43 @@
             </ul>
             <hr>
         </nav>
+
         <main>
             <section class="main-content">
                 <div class="main-conta">
-                    <p>Welcome to Kays Espresso BarKays Coffee ร้านกาแฟที่ตั้งใจคัดสรรวัตถุดิบคุณภาพดี
-                        เพื่อให้ได้กาแฟที่มีรสชาติดีที่สุดสำหรับคุณ
-                        Kays Coffee is a coffee shop that is committed to selecting quality ingredients
-                        to provide you with the best tasting coffee.☕</p>
-                    <a href="pic/KAY.jpg" target="_blank" class="img-nav">
-                        <img loading="lazy" class="main-img" src="pic/KAY.jpg" alt="">
-                    </a>
+                    <section class="testimonials">
+                        <h3 class="section-title">แสดงความคิดเห็นของคุณเกี่ยวกับ Kays Espresso Bar</h3>
+                        <div class="comment-box">
+                            <textarea id="userInputName" placeholder="ใส่ความคิดเห็นของคุณ"></textarea>
+                            <button class="text" onclick="submitReview()">ส่งรีวิว</button>
+                        </div>
+                        <div id="displayArea">
+                        </div>
+                        <h2 class="section-title">รีวิวจากลูกค้าของเรา</h2>
+                        <div class="testimonial-container">
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="quote">"Dirty Coffee ที่นี่คือที่สุด! นัวมาก บรรยากาศร้านก็ร่มรื่น
+                                    เหมาะกับการมานั่งทำงานจริงๆ ค่ะ"</p>
+                                <div class="customer-info">
+                                    <img src="https://i.pravatar.cc/50?u=1" alt="Customer" class="avatar">
+                                    <span class="name">คุณแพรวา</span>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="quote">"พนักงานบริการดีมาก แนะนำเมล็ดกาแฟได้ละเอียดสุดๆ ใครสาย Slow Bar
+                                    ต้องมาลองครับ"</p>
+                                <div class="customer-info">
+                                    <img src="https://i.pravatar.cc/50?u=2" alt="Customer" class="avatar">
+                                    <span class="name">คุณต้น</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+
                 <div class="widget">
                     <h4>Follow Kays Espresso Bar</h4>
                     <aside class="widget-follow">
@@ -82,8 +108,7 @@
                     </div>
                 </div>
             </section>
-        </main>
-    </div>
+
 </body>
 
 </html>
