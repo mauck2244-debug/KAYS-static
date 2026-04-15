@@ -18,7 +18,10 @@
         <nav class="navigetor">
             <ul class="nav-menu">
                 <a href="index.html">
-                    <li class="menu-item">หน้าแรก</li>
+                    <li class="nav-logo-item">
+                        <button class="nav-logo" id="nav-logo">
+                        </button>
+                    </li>
                 </a>
 
                 <li class="menu-item"><a href="#" style="text-decoration: none;color: #504e4e;">เกี่ยวกับเรา
@@ -42,54 +45,69 @@
             </ul>
             <hr>
         </nav>
+
         <main>
-            <section class="join-us-section">
-                <div class="container-work">
-                    <h2 class="handwriting" style="font-size: 40px; text-align: center; margin-bottom: 10px;">Join Our
-                        Team</h2>
-                    <p style="text-align: center; color: #666; margin-bottom: 40px;">มาร่วมเป็นส่วนหนึ่งของครอบครัว KAYS
-                        Espresso Bar</p>
+            <div class="main-content-wrapper">
+                <section class="join-us-section">
+                    <div class="container-work">
+                        <h2 class="handwriting" style="font-size: 40px; text-align: center; margin-bottom: 10px;">Join
+                            Our
+                            Team</h2>
+                        <p style="text-align: center; color: #666; margin-bottom: 40px;">มาร่วมเป็นส่วนหนึ่งของครอบครัว
+                            KAYS
+                            Espresso Bar</p>
 
-                    <div class="apply-container">
-                        <div class="job-info">
-                            <h3>ตำแหน่งที่เปิดรับ</h3>
-                            <ul>
-                                <li><strong>Barista:</strong> มีใจรักกาแฟ และมนุษยสัมพันธ์ดี</li>
-                                <li><strong>Service Staff:</strong> ยิ้มแย้มแจ่มใส รักงานบริการ</li>
-                            </ul>
-                            <p class="contact-hint">สอบถามเพิ่มเติมโทร: 039 460 593</p>
+                        <div class="apply-container">
+                            <div class="job-info">
+                                <h3>ตำแหน่งที่เปิดรับ</h3>
+                                <ul>
+                                    <li><strong>Barista:</strong> มีใจรักกาแฟ และมนุษยสัมพันธ์ดี</li>
+                                    <li><strong>Service Staff:</strong> ยิ้มแย้มแจ่มใส รักงานบริการ</li>
+                                </ul>
+                                <p class="contact-hint">สอบถามเพิ่มเติมโทร: 039 460 593</p>
+                            </div>
+
+                            <form class="apply-form">
+                                <div class="form-group">
+                                    <label>ชื่อ-นามสกุล</label>
+                                    <input type="text" placeholder="กรุณากรอกชื่อจริง-นามสกุล" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>เบอร์โทรศัพท์</label>
+                                    <input type="tel" placeholder="08x-xxx-xxxx" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>ตำแหน่งที่สนใจ</label>
+                                    <select>
+                                        <option>Barista (Full-time)</option>
+                                        <option>Barista (Part-time)</option>
+                                        <option>พนักงานเสิร์ฟ (Full-time)</option>
+                                        <option>พนักงานเสิร์ฟ (Part-time)</option>
+                                        <option>Bakery (Full-time)</option>
+                                        <option>Bakery (Part-time)</option>
+                                        <option>ผู้จัดการ </option>
+                                        <option>ผู้จัดการ ฝึกหัด</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>เริ่มงานได้เมื่อไหร่</label>
+                                    <input type="tel" placeholder="วว/ดด/ปปปป" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>ประสบการณ์การทำงาน (ถ้ามี)</label>
+                                    <textarea rows="4" placeholder="เล่าประสบการณ์คร่าวๆ ของคุณ..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-submit">ส่งใบสมัคร</button>
+                            </form>
                         </div>
-
-                        <form class="apply-form">
-                            <div class="form-group">
-                                <label>ชื่อ-นามสกุล</label>
-                                <input type="text" placeholder="กรุณากรอกชื่อจริง-นามสกุล" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label>เบอร์โทรศัพท์</label>
-                                <input type="tel" placeholder="08x-xxx-xxxx" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label>ตำแหน่งที่สนใจ</label>
-                                <select>
-                                    <option>Barista (Full-time)</option>
-                                    <option>Barista (Part-time)</option>
-                                    <option>Service Staff</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>ประสบการณ์การทำงาน (ถ้ามี)</label>
-                                <textarea rows="4" placeholder="เล่าประสบการณ์คร่าวๆ ของคุณ..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn-submit">ส่งใบสมัคร</button>
-                        </form>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <div class="widget">
                 <h4>Follow Kays Espresso Bar</h4>
                 <aside class="widget-follow">

@@ -64,6 +64,8 @@ hr {
     max-width: 100%;
     height: auto;
     margin-bottom: 30px;
+    position: sticky;
+    transition: all 0.3s ease;
 }
 
 .nav-menu {
@@ -75,6 +77,20 @@ hr {
     gap: 50px;
     font-size: 17.5px;
     flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-logo {
+    background-image: url(pic/KAYS\ Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 25px;
+    margin-top: 2px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
 }
 
 .menu-item {
@@ -98,7 +114,6 @@ hr {
 .menu-item:hover .dropdown-content {
     display: block;
 }
-
 
 .dropdown-content li a {
     padding: 10px 20px;
@@ -128,9 +143,9 @@ main {
 }
 
 .container {
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 1200px;
-    margin: 0 20px 20px 20px;
+    margin: 0 auto 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,9 +205,13 @@ main {
     flex-direction: column;
 }
 
+
+
 .main-content {
     display: flex;
     flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main-conta {
@@ -220,7 +239,8 @@ main {
     align-items: center;
     width: 295px;
     gap: 15px;
-    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .widget-follow {
@@ -241,7 +261,7 @@ main {
 .img-show {
     position: center;
 
-} 
+}
 
 .image-stack {
     width: 100%;
@@ -253,7 +273,7 @@ main {
     padding: 10px;
 }
 
-.photo{
+.photo {
     border-radius: 2.5px;
 }
 
@@ -269,7 +289,7 @@ main {
     width: 100%;
 }
 
-.map-kay{
+.map-kay {
     margin-top: 20px;
 }
 
@@ -284,17 +304,42 @@ main {
     margin-top: 20px;
 }
 
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 10px 0 10px;
+}
+
 .join-us-section {
-    padding: 60px 20px;
+    flex: 1;
+    padding: 40px 0 ;
     background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-work {
+    width: 100%;
+    max-width: 800px; 
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .apply-container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr; /* แยกฝั่งข้อมูลกับฟอร์ม */
+    grid-template-columns: 1fr 1.5fr;
     gap: 40px;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 .job-info h3 {
@@ -317,7 +362,7 @@ main {
     background: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -331,7 +376,9 @@ main {
     font-size: 14px;
 }
 
-.form-group input, .form-group select, .form-group textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -355,7 +402,8 @@ main {
     background-color: #555;
 }
 
-body::before, body::after {
+body::before,
+body::after {
     opacity: 0.4;
 }
 
@@ -380,7 +428,7 @@ body::before, body::after {
     margin-bottom: 10px;
 }
 
-.comment-box button { 
+.comment-box button {
     width: 100%;
     max-width: 90px;
     height: 40px;
@@ -392,6 +440,24 @@ body::before, body::after {
     font-size: 14px;
 }
 
+.scrolling-menu {
+    width: 100%;
+    height: 1000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+}
+
+.scrolling-img {
+    width: 100%;
+    max-width: 635px;
+    max-height: 900px;
+    flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
     .apply-container {
         grid-template-columns: 1fr;
@@ -401,19 +467,27 @@ body::before, body::after {
 @media (max-width:768px) {
 
     .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {}
 
     .main-container {
         margin: 0 20px 0 20px;
     }
 
     .slider {
-        overflow-x: auto; 
+        overflow-x: auto;
         flex-wrap: nowrap;
-        scroll-snap-type: x mandatory; 
+        scroll-snap-type: x mandatory;
         scrollbar-width: none;
         -ms-overflow-style: none;
         padding-bottom: 30px;
@@ -421,6 +495,13 @@ body::before, body::after {
 
     .slider::-webkit-scrollbar {
         display: none;
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: auto;
+        padding-bottom: 56.25%;
+        height: 0;
     }
 
     .content {
@@ -440,7 +521,9 @@ body::before, body::after {
     .hide-on-mobile {
         display: none;
     }
-    body::before, body::after {
-    display: none;
-}
+
+    body::before,
+    body::after {
+        display: none;
+    }
 }
